@@ -1,0 +1,253 @@
+/* =========================
+   LAYOUT GENERAL
+========================= */
+
+main {
+  width: 100%;
+}
+
+section {
+  scroll-margin-top: 90px;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  width: 100%;
+
+  background-color: rgba(8, 17, 31, 0.9);
+  border-bottom: 1px solid #1e293b;
+  backdrop-filter: blur(10px);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #f8fafc;
+}
+
+.nav {
+  display: flex;
+  gap: 28px;
+}
+
+.nav a {
+  font-size: 0.95rem;
+  color: #94a3b8;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.nav a:hover {
+  color: #2dd4bf;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  max-width: 1200px;
+  min-height: calc(100vh - 75px);
+
+  margin: 0 auto;
+  padding: 80px 24px;
+
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  align-items: center;
+  gap: 80px;
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.hero-intro {
+  margin: 0 0 10px;
+
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2dd4bf;
+}
+
+.hero h1 {
+  margin: 0;
+
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  line-height: 1;
+  color: #f8fafc;
+}
+
+.hero h2 {
+  margin: 20px 0;
+
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 500;
+  color: #94a3b8;
+}
+
+.hero h2 span {
+  color: #2dd4bf;
+}
+
+.hero-description {
+  max-width: 650px;
+
+  margin: 0;
+
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #a8b3c5;
+}
+
+
+/* =========================
+   BOTONES
+========================= */
+
+.hero-buttons {
+  margin-top: 32px;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.button {
+  padding: 12px 20px;
+
+  border: 1px solid #334155;
+  border-radius: 8px;
+
+  font-weight: 600;
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+}
+
+.button-primary {
+  background-color: #2dd4bf;
+  border-color: #2dd4bf;
+  color: #08111f;
+}
+
+.button-primary:hover {
+  background-color: #5eead4;
+}
+
+.button-secondary {
+  background-color: transparent;
+  color: #e2e8f0;
+}
+
+.button-secondary:hover {
+  border-color: #2dd4bf;
+}
+
+
+/* =========================
+   TERMINAL
+========================= */
+
+.terminal {
+  overflow: hidden;
+
+  border: 1px solid #1e293b;
+  border-radius: 12px;
+
+  background-color: #0d1726;
+
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+}
+
+.terminal-header {
+  padding: 14px 18px;
+
+  display: flex;
+  gap: 8px;
+
+  background-color: #111c2d;
+  border-bottom: 1px solid #1e293b;
+}
+
+.terminal-header span {
+  width: 10px;
+  height: 10px;
+
+  border-radius: 50%;
+  background-color: #334155;
+}
+
+.terminal-content {
+  padding: 28px;
+
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+.terminal-content p {
+  margin: 0 0 10px;
+}
+
+.terminal-symbol {
+  color: #2dd4bf;
+}
+
+.terminal-result {
+  padding-left: 16px;
+  color: #94a3b8;
+}
+
+
+/* =========================
+   RESTO DE SECCIONES
+   temporalmente
+========================= */
+
+#projects,
+#about,
+#technologies,
+#contact {
+  max-width: 1200px;
+
+  margin: 0 auto;
+  padding: 100px 24px;
+}
+
+#projects h2,
+#about h2,
+#technologies h2,
+#contact h2 {
+  margin: 0;
+
+  font-size: 2rem;
+  color: #f8fafc;
+}
