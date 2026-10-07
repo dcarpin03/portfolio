@@ -251,3 +251,270 @@ section {
   font-size: 2rem;
   color: #f8fafc;
 }
+
+/* =========================
+   PROJECTS
+========================= */
+
+.projects-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 110px 24px;
+}
+
+.section-heading {
+  max-width: 700px;
+  margin-bottom: 48px;
+}
+
+.section-heading p {
+  margin: 0 0 8px;
+
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #2dd4bf;
+}
+
+.section-heading h2 {
+  margin: 0 0 16px;
+
+  font-size: clamp(2rem, 5vw, 3rem);
+  color: #f8fafc;
+}
+
+.section-heading span {
+  color: #94a3b8;
+  line-height: 1.7;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.project-card {
+  padding: 28px;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: #0d1726;
+  border: 1px solid #1e293b;
+  border-radius: 14px;
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  border-color: #334155;
+}
+
+.project-card-header h3 {
+  margin: 4px 0 0;
+
+  font-size: 1.5rem;
+  color: #f8fafc;
+}
+
+.project-status {
+  margin: 0;
+
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #2dd4bf;
+}
+
+.project-description {
+  margin: 20px 0;
+
+  line-height: 1.7;
+  color: #a8b3c5;
+}
+
+.project-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  margin-bottom: 22px;
+}
+
+.project-technologies span {
+  padding: 6px 10px;
+
+  font-size: 0.8rem;
+
+  color: #cbd5e1;
+  background-color: #111c2d;
+
+  border: 1px solid #1e293b;
+  border-radius: 6px;
+}
+
+.project-features {
+  margin: 0 0 24px;
+  padding-left: 20px;
+
+  color: #94a3b8;
+  line-height: 1.7;
+}
+
+.project-features li {
+  margin-bottom: 6px;
+}
+
+.project-link {
+  margin-top: auto;
+
+  display: inline-flex;
+  width: fit-content;
+
+  padding: 10px 16px;
+
+  font-weight: 600;
+
+  color: #2dd4bf;
+
+  border: 1px solid #2dd4bf;
+  border-radius: 8px;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.project-link:hover {
+  background-color: #2dd4bf;
+  color: #08111f;
+}
+
+
+/* =========================
+   PROJECT PIPELINE
+========================= */
+
+.project-pipeline {
+  margin-bottom: 26px;
+  padding: 20px;
+
+  background-color: #08111f;
+
+  border: 1px solid #1e293b;
+  border-radius: 10px;
+
+  text-align: center;
+}
+
+.pipeline-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 0.85rem;
+
+  color: #cbd5e1;
+}
+
+.pipeline-arrow {
+  margin: 4px 0;
+
+  color: #2dd4bf;
+}
+
+
+/* =========================
+   PROJECT IMAGE
+========================= */
+
+.project-image {
+  margin: 20px 0 0;
+
+  overflow: hidden;
+
+  border: 1px solid #1e293b;
+  border-radius: 10px;
+}
+
+.project-image img {
+  width: 100%;
+  display: block;
+
+  object-fit: cover;
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+.about-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 110px 24px;
+}
+
+.about-content {
+  max-width: 800px;
+}
+
+.about-content p {
+  margin: 0 0 18px;
+
+  font-size: 1.05rem;
+  line-height: 1.8;
+
+  color: #a8b3c5;
+}
+
+/* =========================
+   TECHNOLOGIES
+========================= */
+
+.technologies-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 110px 24px;
+}
+
+.technology-groups {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.technology-group {
+  padding: 24px;
+
+  background-color: #0d1726;
+  border: 1px solid #1e293b;
+  border-radius: 12px;
+}
+
+.technology-group h3 {
+  margin: 0 0 18px;
+
+  font-size: 1rem;
+  color: #f8fafc;
+}
+
+.technology-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.technology-list span {
+  padding: 7px 11px;
+
+  font-size: 0.85rem;
+
+  color: #cbd5e1;
+  background-color: #111c2d;
+
+  border: 1px solid #1e293b;
+  border-radius: 6px;
+}
