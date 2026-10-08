@@ -566,3 +566,151 @@ section {
   font-size: 1rem;
   color: #e2e8f0;
 }
+
+/* =========================
+   RESPONSIVE - TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 48px;
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .terminal {
+    max-width: 650px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .technology-groups {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-links {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================
+   RESPONSIVE - MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+  .header-container {
+    padding: 16px 20px;
+  }
+
+  .logo {
+    font-size: 1.05rem;
+  }
+
+  .nav {
+    gap: 16px;
+  }
+
+  .nav a {
+    font-size: 0.85rem;
+  }
+
+  .hero {
+    min-height: auto;
+
+    padding: 60px 20px 80px;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.8rem, 14vw, 4.2rem);
+  }
+
+  .hero h2 {
+    font-size: 1.35rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .terminal-content {
+    padding: 22px;
+    font-size: 0.85rem;
+  }
+
+  .projects-section,
+  .about-section,
+  .technologies-section,
+  .contact-section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .project-card {
+    padding: 22px;
+  }
+
+  .technology-group {
+    padding: 20px;
+  }
+
+  .contact-card {
+    padding: 20px;
+  }
+}
+
+/* =========================
+   RESPONSIVE - SMALL MOBILE
+========================= */
+
+@media (max-width: 520px) {
+
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .nav {
+    width: 100%;
+
+    overflow-x: auto;
+
+    padding-bottom: 4px;
+  }
+
+  .nav a {
+    white-space: nowrap;
+  }
+
+  .hero {
+    padding-top: 40px;
+  }
+
+  .section-heading h2 {
+    font-size: 2rem;
+  }
+
+  .project-card-header h3 {
+    font-size: 1.3rem;
+  }
+
+  .project-technologies span,
+  .technology-list span {
+    font-size: 0.78rem;
+  }
+}
