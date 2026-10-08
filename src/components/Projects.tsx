@@ -42,7 +42,7 @@ function Projects() {
             'Semantic classification',
             'Recommendation',
           ]}
-          githubUrl="https://github.com/dcarpin03/Personal-Discovery-Engine"
+          githubUrl="https://github.com/dcarpin03/personal-discovery-engine-showcase"
         />
 
         <ProjectCard
@@ -65,6 +65,27 @@ function Projects() {
             'Interacción con el entorno mediante el ratón',
           ]}
           githubUrl="https://github.com/dcarpin03/ant-colony-lab"
+        />
+
+        <ProjectCard
+          title="Multi-Agent Travel Recommender"
+          status="Proyecto académico"
+          description="Sistema multiagente desarrollado para analizar datos de viajes con Pandas y generar recomendaciones de itinerarios mediante agentes con responsabilidades diferenciadas."
+          technologies={[
+            'Python',
+            'Pandas',
+            'Google Colab',
+            'LLM Agents',
+            'Data Analysis',
+          ]}
+          features={[
+            'Análisis de datos tabulares con Pandas',
+            'Dos agentes con responsabilidades separadas',
+            'Procesamiento estructurado de información',
+            'Generación de recomendaciones de itinerarios',
+            'Proyecto desarrollado en la asignatura de Big Data de la UJI',
+          ]}
+          githubUrl="https://github.com/dcarpin03/multi-agent-travel-recommender"
         />
       </div>
     </section>
