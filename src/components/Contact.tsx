@@ -13,11 +13,11 @@ function Contact() {
 
       <div className="contact-links">
         <a
-          href="mailto:tuemail@correo.com"
+          href="mailto:danielcarpinterogarcia03@gmail.com"
           className="contact-card"
         >
           <span className="contact-label">Email</span>
-          <span className="contact-value">tuemail@correo.com</span>
+          <span className="contact-value">danielcarpinterogarcia03@gmail.com</span>
         </a>
 
         <a
@@ -31,7 +31,7 @@ function Contact() {
         </a>
 
         <a
-          href="#"
+          href="https://github.com/dcarpin03"
           target="_blank"
           rel="noreferrer"
           className="contact-card"

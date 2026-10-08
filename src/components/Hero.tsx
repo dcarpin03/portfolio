@@ -13,11 +13,16 @@ function Hero() {
         <p className="hero-description">
           Soy Ingeniero Informático y estudiante del Máster en Sistemas
           Inteligentes en la UJI. Me interesa el desarrollo de software,
-          el procesamiento de datos y la inteligencia artificial.
+          el procesamiento de datos, la inteligencia artificial y la ciberseguridad.
         </p>
 
         <div className="hero-buttons">
-          <a href="#" className="button button-primary">
+          <a 
+            href="https://github.com/dcarpin03" 
+            className="button button-primary"
+            target="_blank"
+            rel="noneferrer"
+          >
             GitHub
           </a>
 
@@ -25,7 +30,11 @@ function Hero() {
             LinkedIn
           </a>
 
-          <a href="#" className="button button-secondary">
+          <a 
+            href="/CV_DanielCarpinteroGarcia.pdf" 
+            className="button button-secondary"
+            download
+          >
             Descargar CV
           </a>
         </div>

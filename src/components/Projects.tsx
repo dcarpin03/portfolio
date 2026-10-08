@@ -42,7 +42,7 @@ function Projects() {
             'Semantic classification',
             'Recommendation',
           ]}
-          githubUrl="#"
+          githubUrl="https://github.com/dcarpin03/Personal-Discovery-Engine"
         />
 
         <ProjectCard
@@ -64,7 +64,7 @@ function Projects() {
             'Detección y evasión de obstáculos',
             'Interacción con el entorno mediante el ratón',
           ]}
-          githubUrl="#"
+          githubUrl="https://github.com/dcarpin03/ant-colony-lab"
         />
       </div>
     </section>
