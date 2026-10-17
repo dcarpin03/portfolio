@@ -4,87 +4,44 @@ function Projects() {
   return (
     <section id="projects" className="projects-section">
       <div className="section-heading">
-        <p>Trabajo personal</p>
+        <p>Trabajo personal y académico</p>
         <h2>Proyectos</h2>
-
-        <span>
-          Proyectos con los que exploro desarrollo de software, datos,
-          algoritmos e inteligencia artificial.
-        </span>
+        <span>Aplicaciones, procesamiento de datos y sistemas basados en agentes. Cada proyecto aborda un problema diferente con una implementación propia.</span>
       </div>
 
       <div className="projects-grid">
         <ProjectCard
+          title="FocusDesk"
+          status="Versión 1.0.0 · Windows"
+          description="Aplicación de escritorio para planificar sesiones de estudio con Pomodoro, organizar tareas y consultar el historial. Interfaz personalizable y datos almacenados localmente."
+          technologies={['Electron', 'React', 'TypeScript', 'Vite', 'electron-store']}
+          features={['Pomodoro de 25, 45 y 50 minutos', 'Sesiones y tareas persistentes', 'Temas de color y fondos propios']}
+          image="https://raw.githubusercontent.com/dcarpin03/focusdesk/main/docs/screenshots/focusdesk.png"
+          githubUrl="https://github.com/dcarpin03/focusdesk"
+          downloadUrl="https://github.com/dcarpin03/focusdesk/releases/tag/v1.0.0"
+        />
+        <ProjectCard
           title="Personal Discovery Engine"
-          status="En desarrollo"
-          description="Sistema inteligente de recomendación personal que recopila contenido de distintas fuentes, lo procesa y busca priorizar la información más relevante según intereses, prioridades y tiempo disponible."
-          technologies={[
-            'Python',
-            'DuckDB',
-            'Pydantic',
-            'APIs',
-            'Data Processing',
-          ]}
-          features={[
-            'Obtención de noticias mediante APIs externas',
-            'Validación y normalización de datos con Pydantic',
-            'Control de duplicados',
-            'Persistencia de datos con DuckDB',
-            'Extracción de características deterministas',
-            'Arquitectura preparada para embeddings, ML y LLMs',
-          ]}
-          pipeline={[
-            'News API',
-            'Ingestion',
-            'Pydantic validation',
-            'DuckDB',
-            'Feature extraction',
-            'Semantic classification',
-            'Recommendation',
-          ]}
+          status="Prototipo de datos"
+          description="Pipeline de noticias que obtiene, valida y almacena contenido para estudiar su relevancia. La clasificación semántica con embeddings y las explicaciones mediante LLM son líneas de evolución."
+          technologies={['Python', 'Pydantic', 'DuckDB', 'NewsAPI']}
+          features={['Ingesta desde API externa', 'Normalización y control de duplicados', 'Extracción determinista de características']}
           githubUrl="https://github.com/dcarpin03/personal-discovery-engine-showcase"
         />
-
         <ProjectCard
           title="Ant Colony Lab"
-          status="Prototipo"
-          description="Simulación de una colonia de hormigas basada en reglas locales simples que generan comportamiento emergente a nivel de colonia."
-          technologies={[
-            'Python',
-            'Pygame',
-            'Algorithms',
-            'Simulation',
-          ]}
-          features={[
-            'Movimiento autónomo',
-            'Exploración aleatoria',
-            'Detección y transporte de alimento',
-            'Generación y decaimiento de feromonas',
-            'Seguimiento de caminos',
-            'Detección y evasión de obstáculos',
-            'Interacción con el entorno mediante el ratón',
-          ]}
+          status="Simulación en evolución"
+          description="Laboratorio 2D de hormigas autónomas que exploran, recogen alimento y siguen rastros de feromonas. Las reglas locales dan lugar a comportamientos colectivos."
+          technologies={['Python', 'Pygame', 'Simulación multiagente']}
+          features={['Agentes con estados independientes', 'Feromonas y evaporación', 'Comida, obstáculos y velocidad interactiva']}
           githubUrl="https://github.com/dcarpin03/ant-colony-lab"
         />
-
         <ProjectCard
           title="Multi-Agent Travel Recommender"
           status="Proyecto académico"
-          description="Sistema multiagente desarrollado para analizar datos de viajes con Pandas y generar recomendaciones de itinerarios mediante agentes con responsabilidades diferenciadas."
-          technologies={[
-            'Python',
-            'Pandas',
-            'Google Colab',
-            'LLM Agents',
-            'Data Analysis',
-          ]}
-          features={[
-            'Análisis de datos tabulares con Pandas',
-            'Dos agentes con responsabilidades separadas',
-            'Procesamiento estructurado de información',
-            'Generación de recomendaciones de itinerarios',
-            'Proyecto desarrollado en la asignatura de Big Data de la UJI',
-          ]}
+          description="Prototipo de recomendación de itinerarios con dos agentes especializados: uno filtra lugares turísticos con Pandas y otro organiza un plan mediante un LLM."
+          technologies={['Python', 'Agno', 'Pandas', 'Pydantic', 'Google Colab']}
+          features={['Filtrado por ciudad, intereses y coste', 'Intercambio de datos estructurados', 'Planificación de actividades por días']}
           githubUrl="https://github.com/dcarpin03/multi-agent-travel-recommender"
         />
       </div>

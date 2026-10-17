@@ -15,9 +15,9 @@ function About() {
         </p>
 
         <p>
-          Me gusta aprender construyendo proyectos propios que me permitan
-          probar nuevas tecnologías, diseñar soluciones y resolver problemas
-          reales de forma práctica.
+          Desarrollo proyectos propios para profundizar en arquitectura de aplicaciones,
+          tratamiento de datos y sistemas inteligentes. Me interesa crear soluciones
+          que pueda probar, documentar y enseñar con código real.
         </p>
       </div>
     </section>

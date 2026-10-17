@@ -21,16 +21,6 @@ function Contact() {
         </a>
 
         <a
-          href="#"
-          target="_blank"
-          rel="noreferrer"
-          className="contact-card"
-        >
-          <span className="contact-label">LinkedIn</span>
-          <span className="contact-value">Ver perfil</span>
-        </a>
-
-        <a
           href="https://github.com/dcarpin03"
           target="_blank"
           rel="noreferrer"

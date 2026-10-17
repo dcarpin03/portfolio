@@ -7,6 +7,7 @@ type ProjectCardProps = {
   githubUrl: string
   image?: string
   pipeline?: string[]
+  downloadUrl?: string
 }
 
 function ProjectCard({
@@ -18,6 +19,7 @@ function ProjectCard({
   githubUrl,
   image,
   pipeline,
+  downloadUrl,
 }: ProjectCardProps) {
   return (
     <article className="project-card">
@@ -30,7 +32,7 @@ function ProjectCard({
 
       {image && (
         <div className="project-image">
-          <img src={image} alt={`Captura de ${title}`} />
+          <img src={image} alt={`Captura real de ${title}`} loading="lazy" />
         </div>
       )}
 
@@ -62,14 +64,10 @@ function ProjectCard({
         </div>
       )}
 
-      <a
-        href={githubUrl}
-        className="project-link"
-        target="_blank"
-        rel="noreferrer"
-      >
-        Ver en GitHub
-      </a>
+      <div className="project-actions">
+        {downloadUrl && <a href={downloadUrl} className="project-link project-link-primary" target="_blank" rel="noopener noreferrer">Descargar para Windows</a>}
+        <a href={githubUrl} className="project-link" target="_blank" rel="noopener noreferrer">Ver código en GitHub</a>
+      </div>
     </article>
   )
 }

@@ -686,3 +686,14 @@ section {
     font-size: 0.78rem;
   }
 }
+/* Acciones de proyecto: descarga y repositorio */
+.project-actions { margin-top: auto; display: flex; flex-wrap: wrap; gap: 10px; }
+.project-actions .project-link { margin-top: 0; }
+.project-link-primary { background: #2dd4bf; color: #08111f; }
+.project-link-primary:hover { background: #5eead4; }
+.project-image { aspect-ratio: 16 / 9; }
+.project-image img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+@media (max-width: 520px) {
+  .project-actions { flex-direction: column; }
+  .project-actions .project-link { width: 100%; justify-content: center; text-align: center; }
+}
