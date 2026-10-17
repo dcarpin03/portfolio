@@ -22,8 +22,8 @@ const projects = [
     title: 'Ant Colony Lab',
     description: 'Simulación interactiva de hormigas autónomas que buscan comida y se comunican mediante feromonas.',
     technologies: ['Python', 'Pygame', 'Simulación'],
-    image: 'https://images.unsplash.com/photo-1581852017103-68ac65514cf7?auto=format&fit=crop&w=900&q=85',
-    imageAlt: 'Imagen ilustrativa de naturaleza para Ant Colony Lab; la simulación real está en el repositorio',
+    image: 'https://images.unsplash.com/photo-1719677488297-b601b4f3a35c?auto=format&fit=crop&w=900&q=85',
+    imageAlt: 'Fotografía ilustrativa de hormigas sobre una planta; la simulación real está en el repositorio',
     githubUrl: 'https://github.com/dcarpin03/ant-colony-lab',
   },
   {
