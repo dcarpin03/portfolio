@@ -2,17 +2,17 @@ function Hero() {
   return (
     <section id="home" className="hero">
       <div className="hero-content">
-        <p className="hero-intro">Hola, soy</p>
+        <p className="hero-intro">HOLA, SOY</p>
         <h1>Daniel</h1>
         <h2>Software Developer <span>|</span> AI <span>|</span> Data</h2>
         <p className="hero-description">
-          Bienvenido a mi portfolio. Aquí podrás conocerme un poco mejor, descubrir
-          los proyectos que he desarrollado y explorar las tecnologías con las que
-          trabajo y sigo aprendiendo.
+          Bienvenido a mi portfolio. Aquí encontrarás información sobre mí,
+          los proyectos que desarrollo y las tecnologías con las que trabajo
+          en el mundo del software y la inteligencia artificial.
         </p>
         <div className="hero-buttons">
-          <a href="https://github.com/dcarpin03" className="button button-primary" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="/CV_DanielCarpinteroGarcia.pdf" className="button button-secondary" download>Descargar CV</a>
+          <a href="#projects" className="button button-primary">Ver proyectos <span aria-hidden="true">↗</span></a>
+          <a href="#about" className="button button-secondary">Sobre mí <span aria-hidden="true">→</span></a>
         </div>
       </div>
     </section>

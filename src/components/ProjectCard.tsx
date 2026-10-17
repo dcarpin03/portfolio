@@ -1,72 +1,29 @@
 type ProjectCardProps = {
   title: string
-  status: string
   description: string
   technologies: string[]
-  features: string[]
   githubUrl: string
-  image?: string
-  pipeline?: string[]
+  image: string
+  imageAlt: string
   downloadUrl?: string
 }
 
-function ProjectCard({
-  title,
-  status,
-  description,
-  technologies,
-  features,
-  githubUrl,
-  image,
-  pipeline,
-  downloadUrl,
-}: ProjectCardProps) {
+function ProjectCard({ title, description, technologies, githubUrl, image, imageAlt, downloadUrl }: ProjectCardProps) {
   return (
     <article className="project-card">
-      <div className="project-card-header">
-        <div>
-          <p className="project-status">{status}</p>
-          <h3>{title}</h3>
+      <a href={githubUrl} target="_blank" rel="noopener noreferrer" className="project-image" aria-label={`Ver proyecto ${title} en GitHub`}>
+        <img src={image} alt={imageAlt} loading="lazy" />
+      </a>
+      <div className="project-card-body">
+        <h3>{title}</h3>
+        <div className="project-technologies">
+          {technologies.map(technology => <span key={technology}>{technology}</span>)}
         </div>
-      </div>
-
-      {image && (
-        <div className="project-image">
-          <img src={image} alt={`Captura real de ${title}`} loading="lazy" />
+        <p className="project-description">{description}</p>
+        <div className="project-actions">
+          <a href={githubUrl} target="_blank" rel="noopener noreferrer">Ver código <span aria-hidden="true">↗</span></a>
+          {downloadUrl && <a href={downloadUrl} target="_blank" rel="noopener noreferrer">Descargar <span aria-hidden="true">↓</span></a>}
         </div>
-      )}
-
-      <p className="project-description">{description}</p>
-
-      <div className="project-technologies">
-        {technologies.map((technology) => (
-          <span key={technology}>{technology}</span>
-        ))}
-      </div>
-
-      <ul className="project-features">
-        {features.map((feature) => (
-          <li key={feature}>{feature}</li>
-        ))}
-      </ul>
-
-      {pipeline && (
-        <div className="project-pipeline">
-          {pipeline.map((step, index) => (
-            <div key={step} className="pipeline-step">
-              <span>{step}</span>
-
-              {index < pipeline.length - 1 && (
-                <span className="pipeline-arrow">↓</span>
-              )}
-            </div>
-          ))}
-        </div>
-      )}
-
-      <div className="project-actions">
-        {downloadUrl && <a href={downloadUrl} className="project-link project-link-primary" target="_blank" rel="noopener noreferrer">Descargar para Windows</a>}
-        <a href={githubUrl} className="project-link" target="_blank" rel="noopener noreferrer">Ver código en GitHub</a>
       </div>
     </article>
   )
