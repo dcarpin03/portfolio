@@ -23,9 +23,9 @@ function Projects() {
         <ProjectCard
           title="Personal Discovery Engine"
           status="Prototipo de datos"
-          description="Pipeline de noticias que obtiene, valida y almacena contenido para estudiar su relevancia. La clasificación semántica con embeddings y las explicaciones mediante LLM son líneas de evolución."
+          description="Proyecto personal de ingeniería de datos orientado a descubrir y priorizar contenido relevante. El prototipo obtiene noticias desde una API externa, valida sus campos con Pydantic, evita duplicados y las almacena en DuckDB. También extrae características deterministas para analizar la información. Está planteado para evolucionar hacia una clasificación semántica más precisa y recomendaciones explicables mediante modelos de IA."
           technologies={['Python', 'Pydantic', 'DuckDB', 'NewsAPI']}
-          features={['Ingesta desde API externa', 'Normalización y control de duplicados', 'Extracción determinista de características']}
+          features={['Pipeline modular de extracción, validación y persistencia', 'Tratamiento de registros duplicados y control de integridad', 'Características temporales y textuales para análisis posterior', 'Arquitectura extensible a embeddings, ML y LLMs sin presentarlos como funcionalidades terminadas']}
           githubUrl="https://github.com/dcarpin03/personal-discovery-engine-showcase"
         />
         <ProjectCard

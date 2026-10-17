@@ -69,12 +69,12 @@ section {
 .hero {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 50px 24px 50px;
+  padding: 48px 24px 30px;
+  display: block;
+}
 
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  align-items: center;
-  gap: 80px;
+.hero-content {
+  max-width: 760px;
 }
 
 .hero-content {
@@ -174,55 +174,7 @@ section {
    TERMINAL
 ========================= */
 
-.terminal {
-  overflow: hidden;
-
-  border: 1px solid #1e293b;
-  border-radius: 12px;
-
-  background-color: #0d1726;
-
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
-}
-
-.terminal-header {
-  padding: 14px 18px;
-
-  display: flex;
-  gap: 8px;
-
-  background-color: #111c2d;
-  border-bottom: 1px solid #1e293b;
-}
-
-.terminal-header span {
-  width: 10px;
-  height: 10px;
-
-  border-radius: 50%;
-  background-color: #334155;
-}
-
-.terminal-content {
-  padding: 28px;
-
-  font-family: Consolas, "Courier New", monospace;
-  font-size: 0.95rem;
-  line-height: 1.8;
-}
-
-.terminal-content p {
-  margin: 0 0 10px;
-}
-
-.terminal-symbol {
-  color: #2dd4bf;
-}
-
-.terminal-result {
-  padding-left: 16px;
-  color: #94a3b8;
-}
+/* La terminal decorativa se ha retirado del inicio. */
 
 /* =========================
    PROJECTS
@@ -231,7 +183,7 @@ section {
 .projects-section {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 40px 24px 30px;
+  padding: 24px 24px 22px;
 }
 
 .section-heading {
@@ -262,7 +214,7 @@ section {
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  align-items: start;
+  align-items: stretch;
   gap: 28px;
 }
 
@@ -279,6 +231,7 @@ section {
   transition:
     transform 0.2s ease,
     border-color 0.2s ease;
+  height: 100%;
 }
 
 .project-card:hover {
@@ -427,7 +380,7 @@ section {
 .about-section {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 30px 24px 40px;
+  padding: 22px 24px 28px;
 }
 
 .about-content {
@@ -450,7 +403,7 @@ section {
 .technologies-section {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 30px 24px 40px;
+  padding: 22px 24px 28px;
 }
 
 .technology-groups {
@@ -499,7 +452,7 @@ section {
 .contact-section {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 30px 24px 50px;
+  padding: 22px 24px 36px;
 }
 
 .contact-links {
@@ -548,14 +501,10 @@ section {
 
   .hero {
     grid-template-columns: 1fr;
-    gap: 48px;
+    gap: 24px;
 
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-
-  .terminal {
-    max-width: 650px;
+    padding-top: 38px;
+    padding-bottom: 26px;
   }
 
   .projects-grid {
@@ -596,7 +545,7 @@ section {
   .hero {
     min-height: auto;
 
-    padding: 60px 20px 80px;
+    padding: 40px 20px 32px;
   }
 
   .hero h1 {
@@ -618,11 +567,6 @@ section {
   .button {
     width: 100%;
     text-align: center;
-  }
-
-  .terminal-content {
-    padding: 22px;
-    font-size: 0.85rem;
   }
 
   .projects-section,
@@ -688,7 +632,7 @@ section {
   }
 }
 /* Acciones de proyecto: descarga y repositorio */
-.project-actions { margin-top: 0; display: flex; flex-wrap: wrap; gap: 10px; }
+.project-actions { margin-top: auto; padding-top: 12px; display: flex; flex-wrap: wrap; gap: 10px; }
 .project-actions .project-link { margin-top: 0; }
 .project-link-primary { background: #2dd4bf; color: #08111f; }
 .project-link-primary:hover { background: #5eead4; }

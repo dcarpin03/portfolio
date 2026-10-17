@@ -3,60 +3,16 @@ function Hero() {
     <section id="home" className="hero">
       <div className="hero-content">
         <p className="hero-intro">Hola, soy</p>
-
         <h1>Daniel</h1>
-
-        <h2>
-          Software Developer <span>|</span> AI <span>|</span> Data
-        </h2>
-
+        <h2>Software Developer <span>|</span> AI <span>|</span> Data</h2>
         <p className="hero-description">
-          Soy Ingeniero Informático y estudiante del Máster en Sistemas
-          Inteligentes en la UJI. Me interesa el desarrollo de software,
-          el backend, los datos y la inteligencia artificial.
+          Bienvenido a mi portfolio. Aquí podrás conocerme un poco mejor, descubrir
+          los proyectos que he desarrollado y explorar las tecnologías con las que
+          trabajo y sigo aprendiendo.
         </p>
-
         <div className="hero-buttons">
-          <a 
-            href="https://github.com/dcarpin03" 
-            className="button button-primary"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHub
-          </a>
-
-<a 
-            href="/CV_DanielCarpinteroGarcia.pdf" 
-            className="button button-secondary"
-            download
-          >
-            Descargar CV
-          </a>
-        </div>
-      </div>
-
-      <div className="terminal">
-        <div className="terminal-header">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-
-        <div className="terminal-content">
-          <p>
-            <span className="terminal-symbol">$</span> whoami
-          </p>
-
-          <p className="terminal-result">software_developer</p>
-
-          <p>
-            <span className="terminal-symbol">$</span> interests
-          </p>
-
-          <p className="terminal-result">
-            software · data · ai · backend
-          </p>
+          <a href="https://github.com/dcarpin03" className="button button-primary" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="/CV_DanielCarpinteroGarcia.pdf" className="button button-secondary" download>Descargar CV</a>
         </div>
       </div>
     </section>
