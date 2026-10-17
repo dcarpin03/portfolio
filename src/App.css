@@ -261,7 +261,8 @@ section {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
   gap: 28px;
 }
 
@@ -340,7 +341,7 @@ section {
 }
 
 .project-link {
-  margin-top: auto;
+  margin-top: 0;
 
   display: inline-flex;
   width: fit-content;
@@ -687,7 +688,7 @@ section {
   }
 }
 /* Acciones de proyecto: descarga y repositorio */
-.project-actions { margin-top: auto; display: flex; flex-wrap: wrap; gap: 10px; }
+.project-actions { margin-top: 0; display: flex; flex-wrap: wrap; gap: 10px; }
 .project-actions .project-link { margin-top: 0; }
 .project-link-primary { background: #2dd4bf; color: #08111f; }
 .project-link-primary:hover { background: #5eead4; }

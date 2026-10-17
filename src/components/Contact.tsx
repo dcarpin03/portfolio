@@ -6,8 +6,10 @@ function Contact() {
         <h2>Hablemos</h2>
 
         <span>
-          Estoy abierto a oportunidades como desarrollador junior, especialmente
-          en software, backend, datos, inteligencia artificial y cloud.
+          Actualmente busco una oportunidad para incorporarme a una empresa comprometida
+          con el desarrollo tecnológico y el aprendizaje continuo, donde pueda aportar
+          mis conocimientos, trabajar junto a profesionales con experiencia, asumir
+          nuevos retos y seguir creciendo como ingeniero informático.
         </span>
       </div>
 

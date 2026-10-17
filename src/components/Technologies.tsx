@@ -1,7 +1,7 @@
 const technologyGroups = [
   {
     title: 'Lenguajes',
-    technologies: ['Python', 'Java', 'C', 'JavaScript', 'TypeScript'],
+    technologies: ['Python', 'Java', 'C', 'JavaScript', 'TypeScript', 'PHP'],
   },
   {
     title: 'Backend y datos',
@@ -9,13 +9,14 @@ const technologyGroups = [
       'PostgreSQL',
       'DuckDB',
       'Supabase',
+      'Firebase',
       'Pydantic',
       'Quarkus',
     ],
   },
   {
     title: 'Frontend y aplicaciones',
-    technologies: ['React', 'Flutter'],
+    technologies: ['React', 'Angular', 'Flutter'],
   },
   {
     title: 'DevOps y herramientas',
