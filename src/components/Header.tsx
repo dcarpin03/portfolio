@@ -2,8 +2,8 @@ function Header() {
   return (
     <header className="header">
       <div className="header-container">
-        <a href="#home" className="logo" aria-label="Daniel, volver al inicio">
-          <span className="logo-mark" aria-hidden="true">&lt;/&gt;</span> Daniel
+        <a href="#home" className="logo" aria-label="Daniel Carpintero García, volver al inicio">
+          <span className="logo-mark" aria-hidden="true">&lt;/&gt;</span> <span className="logo-name">Daniel Carpintero García</span>
         </a>
         <nav className="nav" aria-label="Navegación principal">
           <a href="#home">Inicio</a>
