@@ -5,11 +5,10 @@ const projects = [
     title: 'FocusDesk',
     description: 'Aplicación de escritorio con Pomodoro, gestión de tareas, historial de sesiones y persistencia local.',
     technologies: ['Electron', 'React', 'TypeScript'],
-    image: '/images/projects/focusdesk-cover.webp',
-    imageAlt: 'Portada de FocusDesk con un portátil que muestra el temporizador Pomodoro',
+    image: '/images/projects/focusdesk-demo.gif',
+    imageAlt: 'Demostración animada de FocusDesk con el temporizador Pomodoro, tareas e historial de sesiones',
     githubUrl: 'https://github.com/dcarpin03/focusdesk',
     downloadUrl: 'https://github.com/dcarpin03/focusdesk/releases/tag/v1.0.0',
-    demoVideo: '/videos/focusdesk-demo.mp4',
   },
   {
     title: 'Personal Discovery Engine',
