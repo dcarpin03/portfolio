@@ -12,9 +12,6 @@ function Header() {
           <a href="#technologies">Tecnologías</a>
           <a href="#contact">Contacto</a>
         </nav>
-        <a className="header-cv" href="/CV_DanielCarpinteroGarcia.pdf" download>
-          <span aria-hidden="true">↓</span> Descargar CV
-        </a>
       </div>
     </header>
   )

@@ -3,7 +3,7 @@ function Hero() {
     <section id="home" className="hero">
       <div className="hero-content">
         <p className="hero-intro">HOLA, SOY</p>
-        <h1>Daniel</h1>
+        <h1>Daniel Carpintero</h1>
         <h2>Software Developer <span>|</span> AI <span>|</span> Data</h2>
         <p className="hero-description">
           Bienvenido a mi portfolio. Aquí encontrarás información sobre mí,
