@@ -66,7 +66,13 @@ function Technologies() {
               {group.technologies.map(technology => (
                 <li key={technology}>
                   {learningIcons[technology] ? <TechnologyIcon name={learningIcons[technology]} /> : (
-                    <img src={`/icons/technologies/${technology.toLowerCase()}.svg`} alt="" width="28" height="28" loading="lazy" />
+                    <img
+                      src={`${import.meta.env.BASE_URL}icons/technologies/${technology.toLowerCase()}.svg`}
+                      alt=""
+                      width="28"
+                      height="28"
+                      loading="lazy"
+                    />
                   )}
                   {technology}
                 </li>
