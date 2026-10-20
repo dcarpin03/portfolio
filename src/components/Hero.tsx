@@ -6,7 +6,7 @@ function Hero() {
         <h1>Daniel Carpintero</h1>
         <h2>Software Developer <span>|</span> AI <span>|</span> Data</h2>
         <p className="hero-description">
-          Bienvenido a mi portfolio. Aquí encontrarás información sobre mí,
+          Bienvenido/a a mi portfolio. Aquí encontrarás información sobre mí,
           los proyectos que desarrollo y las tecnologías con las que trabajo
           en el mundo del software y la inteligencia artificial.
         </p>

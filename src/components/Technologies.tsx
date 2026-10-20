@@ -1,34 +1,29 @@
 import TechnologyIcon from './TechnologyIcon'
 import type { IconName } from './TechnologyIcon'
 
-const technologyGroups: { title: string; description: string; icon: IconName; technologies: string[] }[] = [
+const technologyGroups: { title: string; icon: IconName; technologies: string[] }[] = [
   {
     title: 'Lenguajes',
-    description: 'Lenguajes de programación que utilizo en mis proyectos.',
     icon: 'code',
     technologies: ['Python', 'Java', 'C', 'JavaScript', 'TypeScript', 'PHP'],
   },
   {
     title: 'Backend y datos',
-    description: 'Bases de datos y tecnologías para el desarrollo backend.',
     icon: 'database',
     technologies: ['PostgreSQL', 'DuckDB', 'Supabase', 'Firebase', 'Pydantic', 'Quarkus'],
   },
   {
     title: 'Frontend y aplicaciones',
-    description: 'Tecnologías para el desarrollo de interfaces y aplicaciones.',
     icon: 'monitor',
     technologies: ['React', 'Angular', 'Flutter'],
   },
   {
     title: 'DevOps y herramientas',
-    description: 'Herramientas para desarrollo, despliegue y productividad.',
     icon: 'gear',
     technologies: ['Git', 'Docker', 'Podman'],
   },
   {
-    title: 'Actualmente profundizando en',
-    description: 'Tecnologías en las que me estoy formando y explorando actualmente.',
+    title: 'Tecnologías en las que me estoy formando actualmente:',
     icon: 'chart',
     technologies: ['Machine Learning', 'Embeddings', 'Semantic Classification', 'LLMs'],
   },
@@ -59,7 +54,6 @@ function Technologies() {
               <div className="technology-category-icon"><TechnologyIcon name={group.icon} /></div>
               <div>
                 <h3>{group.title}</h3>
-                <p>{group.description}</p>
               </div>
             </div>
             <ul className="technology-list">

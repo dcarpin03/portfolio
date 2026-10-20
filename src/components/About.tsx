@@ -9,7 +9,7 @@ function About() {
         <div className="about-column">
           <p>
             Soy <strong>Ingeniero Informático</strong> y actualmente curso el <strong>Máster en Sistemas Inteligentes en la Universitat Jaume I</strong>.
-            Desde hace años, la informática es una de mis principales aficiones y algo a lo que disfruto dedicando mi tiempo.
+            Desde hace años, la informática es una de mis principales aficiones y disfruto dedicándole tiempo.
             Siempre me ha llamado la atención el mundo de Internet y las posibilidades que la tecnología ofrece tanto a las personas como a las empresas.
           </p>
           <p>
